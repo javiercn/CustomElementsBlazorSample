@@ -5,12 +5,34 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 
 const PROXY_CONFIG = [
   {
-    context: [
-      "/weatherforecast",
+    "context": [
+      "/_framework/blazor.server.js",
     ],
-    target,
-    secure: false
+    "target": target,
+    "secure": false,
+    "changeOrigin": true,
+  },
+  {
+    context: [
+      "/_content",
+      "/_framework",
+      "/_blazor",
+    ],
+    proxyTimeout: 3000,
+    target: target,
+    secure: false,
+    headers: {
+      Connection: 'Keep-Alive'
+    }
+  },
+  {
+    context: [
+      "/_blazor"
+    ],
+    target: target,
+    secure: false,
+    ws: true,
   }
-]
+];
 
 module.exports = PROXY_CONFIG;

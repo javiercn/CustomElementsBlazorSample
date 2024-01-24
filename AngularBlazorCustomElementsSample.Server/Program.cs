@@ -1,8 +1,15 @@
+using AngularBlazorCustomElementsSample.Server;
+using Microsoft.AspNetCore.Components.Web;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor(options =>
+{
+    options.RootComponents.RegisterCustomElement<Counter>("my-counter");
+});
 
 var app = builder.Build();
 
@@ -15,8 +22,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
-
+app.MapBlazorHub();
 app.MapFallbackToFile("/index.html");
 
 app.Run();
