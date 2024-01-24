@@ -3,11 +3,11 @@
     "Name": "ServerAndClient",
     "Projects": [
       {
-        "Name": "AngularBlazorCustomElementsSample.Server\\AngularBlazorCustomElementsSample.Server.csproj",
+        "Name": "angularblazorcustomelementssample.client\\angularblazorcustomelementssample.client.esproj",
         "Action": "Start"
       },
       {
-        "Name": "angularblazorcustomelementssample.client\\angularblazorcustomelementssample.client.esproj",
+        "Name": "AngularBlazorCustomElementsSample.WebAssembly\\AngularBlazorCustomElementsSample.WebAssembly.csproj",
         "Action": "Start"
       }
     ]

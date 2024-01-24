@@ -3,12 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularBlazorCustomElementsSample.Server", "AngularBlazorCustomElementsSample.Server\AngularBlazorCustomElementsSample.Server.csproj", "{54DAB4B2-EDD4-490B-9DF0-252741978363}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularblazorcustomelementssample.client", "angularblazorcustomelementssample.client\angularblazorcustomelementssample.client.esproj", "{6216BD95-AE35-4B4D-AE8F-6934364B5B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularBlazorCustomElementsSample.WebAssembly", "AngularBlazorCustomElementsSample.WebAssembly\AngularBlazorCustomElementsSample.WebAssembly.csproj", "{E6E427FA-8961-48CA-8C28-4095D1CA22EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54DAB4B2-EDD4-490B-9DF0-252741978363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54DAB4B2-EDD4-490B-9DF0-252741978363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54DAB4B2-EDD4-490B-9DF0-252741978363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54DAB4B2-EDD4-490B-9DF0-252741978363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6216BD95-AE35-4B4D-AE8F-6934364B5B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6216BD95-AE35-4B4D-AE8F-6934364B5B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6216BD95-AE35-4B4D-AE8F-6934364B5B55}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6216BD95-AE35-4B4D-AE8F-6934364B5B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6216BD95-AE35-4B4D-AE8F-6934364B5B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6216BD95-AE35-4B4D-AE8F-6934364B5B55}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E6E427FA-8961-48CA-8C28-4095D1CA22EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E427FA-8961-48CA-8C28-4095D1CA22EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E427FA-8961-48CA-8C28-4095D1CA22EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E427FA-8961-48CA-8C28-4095D1CA22EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DEFF93B-482F-4D01-97BF-DBF679284DB5}
 	EndGlobalSection
 EndGlobal
